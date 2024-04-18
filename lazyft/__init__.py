@@ -19,7 +19,7 @@ from .log_config import setup_logger
 from .lft_settings import LftSettings
 
 dotenv.load_dotenv()
-pd.set_option("display.float_format", lambda x: util.human_format(x))
+# pd.set_option("display.float_format", lambda x: util.human_format(x))
 setup_logger()
 logger_exec = logger.bind(type="general")
 tmp_dir = Path("/tmp/lazyft")
